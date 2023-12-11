@@ -22,15 +22,18 @@ import com.example.superheros.antiHero.service.AntiHeroService;
 
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("/anti_heros")
 @AllArgsConstructor
+@Slf4j
 public class AntiHeroController {
     private AntiHeroService antiHeroService;
 
     @GetMapping
     public List<AntiHeroDto> getAllAntiHero() {
+        log.info("fiowfowe -------------");
         return antiHeroService.findAll().stream().map((antiHero) -> new AntiHeroDto(antiHero)).toList();
     }
 
