@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import com.example.superheros.antiHero.entity.AntiHero;
 import com.example.superheros.antiHero.repository.AntiHeroRepository;
 import com.example.superheros.exception.NotFoundException;
-import com.example.util.Merger;
+import com.example.superheros.util.Merger;
 
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;

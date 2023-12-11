@@ -1,4 +1,4 @@
-package com.example.util;
+package com.example.superheros.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
